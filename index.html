@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize css -->
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./publi/normalize.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./public/main.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -15,6 +15,50 @@
     <title>Starter Template</title>
   </head>
   <body>
-    <script type="text/javascript" src="./app.js"></script>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">home</a>
+          <a href="works.html" class="nav-link">works</a>
+          <a href="about.html" class="nav-link">about</a>
+          <a href="contact.html" class="nav-link">contact</a>
+          <a href="g8.html" class="nav-link">g8</a>
+        </div>
+        <div class="search">
+          <i class="fas fa-light fa-magnifying-glass"></i>
+          <div>
+            <a href="es.html" class="nav-link">ES /</a>
+            <a href="en.html" class="nav-link">&nbspEN</a>
+          </div>
+          <button class="btn nav-btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- section page -->
+    <div class="page"></div>
+    <!-- footer -->
+    <footer class="page-footer">
+      <ul class="social-icons">
+        <li>
+          <a href=""><i class="fa-brands fa-behance"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Espectre</span>
+        Branding By esspectre. SA de CV./ Todos los derechos reservados <br />
+        Built by Roberto Merani
+      </p>
+    </footer>
+    <script type="text/javascript" src="./public/app.js"></script>
   </body>
 </html>
