@@ -473,9 +473,7 @@ ul {
 /* Page */
 
 .page {
-  /* background: var(--red-dark); */
   width: 100%;
-  /* max-width: var(--maxWidth); */
   margin: 0 auto;
   min-height: calc(100vh - (6rem + 8rem));
 }
