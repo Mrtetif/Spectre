@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize css -->
-    <link rel="stylesheet" href="./publi/normalize.css" />
+    <link rel="stylesheet" href="./public/normalize.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./public/main.css" />
     <!-- font-awesome -->
@@ -18,7 +18,8 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="nav-center">
-        <div class="nav-links">
+        <div class="nav-links side-bar">
+          <div class="close-sideBar"><i class="fa-solid fa-x"></i></div>
           <a href="index.html" class="nav-link">home</a>
           <a href="works.html" class="nav-link">works</a>
           <a href="about.html" class="nav-link">about</a>
@@ -28,8 +29,8 @@
         <div class="search">
           <i class="fas fa-light fa-magnifying-glass"></i>
           <div>
-            <a href="es.html" class="nav-link">ES /</a>
-            <a href="en.html" class="nav-link">&nbspEN</a>
+            <a href="es.html" class="es">ES /</a>
+            <a href="en.html" class="en">&nbspEN</a>
           </div>
           <button class="btn nav-btn">
             <i class="fas fa-align-justify"></i>
@@ -37,8 +38,21 @@
         </div>
       </div>
     </nav>
-    <!-- section page -->
-    <div class="page"></div>
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>esspectre</h1>
+          </div>
+        </div>
+      </header>
+      <!-- projects -->
+      <section class="projects">
+        <div class="projects-container"></div>
+      </section>
+    </main>
     <!-- footer -->
     <footer class="page-footer">
       <ul class="social-icons">

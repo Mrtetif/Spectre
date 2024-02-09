@@ -79,8 +79,15 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: var(--textColor);
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/img/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg')
+    center/cover no-repeat;
+
   /* position: relative; */
 }
+
+/* gradient */
 
 p {
   margin-bottom: 1.5rem;
@@ -96,7 +103,7 @@ h6 {
   margin: 0;
   margin-bottom: 1.38rem;
   font-family: var(--headingFont);
-  font-weight: 00;
+  font-weight: 400;
   line-height: 1.15;
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
@@ -326,6 +333,7 @@ ul {
   height: 6rem;
   display: flex;
   align-items: flex-end;
+  background: transparent;
 }
 
 .nav-center {
@@ -336,6 +344,7 @@ ul {
 .nav-links {
   width: 100%;
   height: 100vh;
+  padding-right: 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -345,7 +354,10 @@ ul {
 
 .nav-link {
   height: auto;
-  padding: 1rem;
+  padding: 0.75rem;
+  display: block;
+  color: var(--primary-500);
+  text-transform: capitalize;
   transition: var(--transition);
 }
 
@@ -355,15 +367,26 @@ ul {
   color: var(--secondary-500);
 }
 
-.side-bar {
-  display: none;
-  transform: translate(-100%);
+.nav-btn:hover {
+  color: var(--secondary-500);
 }
 
-.nav-link {
-  display: block;
-  color: var(--primary-500);
-  text-transform: capitalize;
+.side-bar {
+  display: none;
+  transform: translate(0);
+  transition: var(--transition);
+}
+
+.close-sideBar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: var(--transition);
+}
+
+.close-sideBar:hover {
+  cursor: pointer;
+  color: var(--grey-400);
 }
 
 .search {
@@ -375,6 +398,13 @@ ul {
 
 .search div {
   display: inline-flex;
+}
+
+/* Languages */
+
+.es,
+.en {
+  color: var(--primary-500);
 }
 
 @media screen and (min-width: 768px) {
@@ -405,6 +435,8 @@ ul {
     width: auto;
     height: auto;
     display: flex;
+    opacity: 1;
+    background: transparent;
   }
 
   .search .nav-link {
@@ -413,28 +445,60 @@ ul {
 
   .nav-link {
     padding: 0 1rem;
+    padding-bottom: 3px;
+    transition: none;
+  }
+
+  .nav-link:hover {
+    padding: 0 1rem;
+    border-bottom: 3px solid var(--primary-500);
+    color: var(--primary-500);
+    background: transparent;
+  }
+
+  .side-bar {
+    transition: var(--transition);
+    transform: translate(0);
+  }
+
+  .close-sideBar {
+    display: none;
   }
 
   .nav-btn {
     display: none;
-  }
-
-  .nav-btn:hover {
-    color: var(--secondary-500);
   }
 }
 
 /* Page */
 
 .page {
-  background: var(--red-dark);
+  /* background: var(--red-dark); */
   width: 100%;
   /* max-width: var(--maxWidth); */
   margin: 0 auto;
   min-height: calc(100vh - (6rem + 8rem));
 }
 
+/* hero */
+
+.hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 2.25rem;
+}
+
 @media screen and (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 5.25rem;
+    text-transform: uppercase;
+  }
+
   .page {
     min-height: calc(100vh - (6rem + 8rem));
   }
