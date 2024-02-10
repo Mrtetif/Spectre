@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Noto+Sans&display=swap');
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap'); /* body {
   padding: 2rem 2rem;
 } */
 
@@ -48,7 +47,7 @@ html {
   --green-dark: #0f5132;
 
   /* Fonts */
-  --headingFont: 'Cutive', serif;
+  --headingFont: 'Open Sans', sans-serif;
   --bodyFont: 'Noto Sans', sans-serif;
   --smallText: 0.75em;
   --maxCharWidth: 40em;
@@ -350,6 +349,7 @@ ul {
   left: 0;
   background: var(--grey-50);
   transition: var(--transition);
+  z-index: 1;
 }
 
 .nav-link {
@@ -402,6 +402,34 @@ ul {
 
 .search div {
   display: inline-flex;
+}
+
+.scroll {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll i {
+  font-size: 2rem;
+  margin-top: -1rem;
+  animation: scrollDown 1s ease-out forwards infinite;
+}
+
+.scroll h5 {
+  margin: 1rem;
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
 }
 
 /* Languages */
@@ -492,7 +520,7 @@ ul {
   min-height: 80vh;
   /* margin-bottom: 2.3rem; */
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -504,7 +532,10 @@ ul {
 }
 
 .text h1 {
-  font-size: 2.25rem;
+  font-size: 2.725rem;
+  line-height: 25rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .hero-text h2 {
@@ -537,7 +568,7 @@ ul {
 
 @media screen and (min-width: 596px) {
   .text h1 {
-    font-size: 4.25rem;
+    font-size: 4.725rem;
   }
 
   .hero-text h2 {
@@ -552,13 +583,16 @@ ul {
 
 @media screen and (min-width: 768px) {
   .text h1 {
-    font-size: 5.25rem;
-    text-transform: uppercase;
+    font-size: 6.25rem;
   }
 
   .hero-text h2 {
     font-size: 2.488rem;
     padding: 3rem;
+  }
+
+  .scroll i {
+    font-size: 3rem;
   }
 
   .page {
