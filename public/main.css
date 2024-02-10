@@ -415,8 +415,6 @@ ul {
   display: inline-flex;
 }
 
-/* header */
-
 .scroll {
   display: flex;
   flex-flow: column;
@@ -537,6 +535,10 @@ ul {
   justify-content: center;
 }
 
+.hero-container {
+  text-align: center;
+}
+
 .hero-text {
   width: 100%;
   position: absolute;
@@ -544,11 +546,21 @@ ul {
   left: 0;
 }
 
+.claim {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
 .text h1 {
-  font-size: 2.725rem;
-  line-height: 25rem;
+  font-size: 3.325rem;
   margin: 0;
   text-transform: uppercase;
+}
+
+.text p {
+  margin-bottom: 7rem;
 }
 
 .hero-text h2 {
@@ -585,8 +597,12 @@ ul {
   }
 
   .hero-text h2 {
-    font-size: 1.93rem;
+    font-size: 2.335rem;
     padding: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
   }
 
   .projects {
@@ -606,6 +622,10 @@ ul {
 
   .scroll i {
     font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1rem;
   }
 
   .page {
