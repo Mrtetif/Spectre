@@ -396,6 +396,10 @@ ul {
   justify-content: space-around;
 }
 
+.search > i {
+  margin-left: 1rem;
+}
+
 .search div {
   display: inline-flex;
 }
@@ -430,8 +434,8 @@ ul {
     justify-content: space-between;
   }
 
-  .search i {
-    padding-left: 1rem;
+  .search > i {
+    margin-left: 1rem;
   }
 
   .nav-links {
