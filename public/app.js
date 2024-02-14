@@ -64,7 +64,7 @@ const project = document.querySelector('.projects-container');
 
 window.addEventListener('DOMContentLoaded', function () {
   let singleItem = gallery.map(function (item) {
-    return `<article class="project">
+    return `<article class="project" onclick="">
             <div class="item">
               <img
                 class="img"
