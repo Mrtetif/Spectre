@@ -31,50 +31,68 @@ window.addEventListener('resize', function () {
   }
 });
 
-// modal
+// gallery
 
-const modal = document.querySelectorAll('.modal');
-const openModal = document.querySelector('.open-modal');
-const openContainer = document.querySelector('.open-container');
+const gallery = [
+  {
+    id: 1,
+    img: './assets/img/services-1.jpg',
+  },
+  {
+    id: 2,
+    img: './assets/img/services-2.jpg',
+  },
+  {
+    id: 3,
+    img: './assets/img/services-3.jpg',
+  },
+  {
+    id: 4,
+    img: './assets/img/services-4.jpg',
+  },
+  {
+    id: 5,
+    img: './assets/img/services-5.jpg',
+  },
+  {
+    id: 6,
+    img: './assets/img/services-6.jpg',
+  },
+];
 
-const prevBtn = document.querySelector('.btn-prev');
-const nextBtn = document.querySelector('.btn-next');
+const project = document.querySelector('.projects-container');
 
-openModal.addEventListener('click', function () {
-  this.style.display = 'none';
-  openContainer.style.display = 'none';
-
-  document.body.classList.remove('modal-active');
-});
-
-modal.forEach(function (btn, index) {
-  btn.addEventListener('click', function () {
-    openModal.style.display = 'block';
-    openContainer.style.display = 'block';
-
-    document.body.classList.add('modal-active');
-
-    currentImageIdx = index + 1;
-    currentImageDisplay(currentImageIdx);
+window.addEventListener('DOMContentLoaded', function () {
+  let singleItem = gallery.map(function (item) {
+    return `<article class="project">
+            <div class="item">
+              <img
+                class="img"
+                src=${item.img}
+                alt="Nautic Services"
+              />
+              <div class="modal">
+                <i class="fa fa-search-plus"></i>
+              </div>
+            </div>
+          </article>`;
   });
+  singleItem = singleItem.join('');
+  project.innerHTML = singleItem;
 });
 
-function currentImageDisplay() {
-  openContainer.style.background = `url(./assets/img/services-${currentImageIdx}.jpg) center/cover no-repeat`;
-}
+// fixed nav-bar
 
-prevBtn.addEventListener('click', function () {
-  currentImageIdx--;
-  if (currentImageIdx === 0) {
-    currentImageIdx = modal.length;
-  }
-  currentImageDisplay(currentImageIdx);
-});
+const navBar = document.querySelector('.navbar');
 
-nextBtn.addEventListener('click', function () {
-  currentImageIdx++;
-  if (currentImageIdx === 7) {
-    currentImageIdx = 1;
+window.addEventListener('scroll', function () {
+  // console.log(window.scrollY + 'px');
+  const scrollHeight = this.window.scrollY;
+  const navHeight = navBar.getBoundingClientRect().height;
+
+  if (scrollHeight > navHeight) {
+    navBar.classList.add('fixed-nav');
+  } else {
+    navBar.classList.remove('fixed-nav');
   }
-  currentImageDisplay(currentImageIdx);
 });
