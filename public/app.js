@@ -64,14 +64,14 @@ const project = document.querySelector('.projects-container');
 
 window.addEventListener('DOMContentLoaded', function () {
   let singleItem = gallery.map(function (item) {
-    return `<article class="project" onclick="">
+    return `<article class="project">
             <div class="item">
               <img
                 class="img"
                 src=${item.img}
                 alt="Nautic Services"
               />
-              <div class="modal">
+              <div class="modal" onclick="">
                 <i class="fa fa-search-plus"></i>
               </div>
             </div>
