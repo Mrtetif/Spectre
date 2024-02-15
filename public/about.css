@@ -1,0 +1,9 @@
+.about-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.about-container p {
+  font-size: 14px !important;
+  line-height: 22px !important;
+}
