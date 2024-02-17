@@ -37,26 +37,32 @@ const gallery = [
   {
     id: 1,
     img: './assets/img/services-1.jpg',
+    name: 'Nautic Services',
   },
   {
     id: 2,
     img: './assets/img/services-2.jpg',
+    name: 'Adeneas',
   },
   {
     id: 3,
     img: './assets/img/services-3.jpg',
+    name: 'Space',
   },
   {
     id: 4,
     img: './assets/img/services-4.jpg',
+    name: 'Brave',
   },
   {
     id: 5,
     img: './assets/img/services-5.jpg',
+    name: 'byHumans',
   },
   {
     id: 6,
     img: './assets/img/services-6.jpg',
+    name: 'hastPhoto',
   },
 ];
 
@@ -72,7 +78,8 @@ window.addEventListener('DOMContentLoaded', function () {
                 alt="Nautic Services"
               />
               <div class="modal" onclick="">
-                <i class="fa fa-search-plus"></i>
+                <!--<i class="fa fa-search-plus"></i>-->
+                <h5>${item.name}</h5>
               </div>
             </div>
           </article>`;

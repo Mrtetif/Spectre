@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./public/normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./public/main.css" />
+    <link rel="stylesheet" href="./public/contact.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Starter Template</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-links side-bar">
+          <div class="close-sideBar"><i class="fa-solid fa-x"></i></div>
+          <a href="index.html" class="nav-link">home</a>
+          <a href="works.html" class="nav-link">works</a>
+          <a href="about.html" class="nav-link">about</a>
+          <a href="contact.html" class="nav-link">contact</a>
+          <!-- <a href="g8.html" class="nav-link">g8</a> -->
+        </div>
+        <div class="search">
+          <i class="fas fa-light fa-magnifying-glass"></i>
+          <div>
+            <a href="es.html" class="es">ES /</a>
+            <a href="en.html" class="en">&nbspEN</a>
+          </div>
+          <button class="btn nav-btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <main class="page">
+      <!-- form -->
+      <form class="form">
+        <h4>Formulario:</h4>
+        <div class="form-container">
+          <div class="form-row">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              placeholder="Hola"
+              id="name"
+              class="form-input"
+            />
+          </div>
+          <div class="form-row">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" id="email" class="form-input" />
+            <small class="form-alert">*Campo obligatorio</small>
+          </div>
+          <div class="form-row">
+            <label for="brand" class="form-label">Nombre de tu marca</label>
+            <input type="text" id="marca" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="problems" class="form-label"
+              >¿Qué problemas u oportunidades the han motivado a crear tu
+              proyecto?</label
+            >
+            <input type="text" id="problems" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="problems" class="form-label"
+              >¿En que servicio estás interesado?</label
+            >
+            <input type="text" id="problems" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="textarea" class="form-label"
+              >Explica tu producto o servicio:</label
+            >
+            <textarea class="form-textarea"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="product" class="form-label"
+            >¿Cuantas variantes de tu producto tienes planeado lanzar?</label
+          >
+          <input type="text" id="product" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="product" class="form-label"
+            >Háblanos del estilo de tu marca y su personlidad:</label
+          >
+          <input type="text" id="product" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="product" class="form-label"
+            >Menciona al menos 3 marcas/empresas que admires relacionadas (o no)
+            con la tura:</label
+          >
+          <input type="text" id="product" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="textarea" class="form-label"
+            >¿Cuales son los valores que definen mejor tu marca?</label
+          >
+          <textarea class="form-textarea"></textarea>
+        </div>
+        <div class="form-row">
+          <label for="textarea" class="form-label"
+            >¿Qué colores definen tu marca? (No necesariamente serán los tonos
+            finales)</label
+          >
+          <textarea class="form-textarea"></textarea>
+        </div>
+        <button class="btn btn-block">Enviar</button>
+      </form>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <ul class="social-icons">
+        <li>
+          <a href=""><i class="fa-brands fa-behance"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p class="text-small">
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Espectre</span>
+        Branding By esspectre. SA de CV./ <br />
+        Todos los derechos reservados <br />
+        Built by Roberto Merani
+      </p>
+    </footer>
+    <script type="text/javascript" src="./public/app.js"></script>
+  </body>
+</html>
